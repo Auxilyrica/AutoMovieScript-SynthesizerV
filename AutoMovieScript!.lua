@@ -1,6 +1,6 @@
 function getClientInfo()
   return {
-    name = "BadApple!!",
+    name = "AutoMovieScript! (Not use)",
     category = "Playful",
     author = "Auxilyrica",
     versionNumber = 1,
@@ -88,7 +88,7 @@ function setNotes2(line, page)
           local ithNote = SV:create("Note")
           ithNote:setLyrics(" ")
           ithNote:setPitch(60+#split_lines-y)
-          ithNote:setTimeRange(SV.QUARTER*3+(SV.QUARTER/2)*(start_x-1), SV.QUARTER/2*(x-start_x+1)) --ŠJn’n“_, ’·‚³
+          ithNote:setTimeRange(SV.QUARTER*3+(SV.QUARTER/2)*(start_x-1), SV.QUARTER/2*(x-start_x+1)) --é–‹å§‹åœ°ç‚¹, é•·ã•
           noteGroup[y]:addNote(ithNote)
         end
       elseif now == 1 then
@@ -96,7 +96,7 @@ function setNotes2(line, page)
         local ithNote = SV:create("Note")
         ithNote:setLyrics(" ")
         ithNote:setPitch(60+#split_lines-y)
-        ithNote:setTimeRange(SV.QUARTER*3+(SV.QUARTER/2)*(start_x-1), SV.QUARTER/2*(x-start_x)) --ŠJn’n“_, ’·‚³
+        ithNote:setTimeRange(SV.QUARTER*3+(SV.QUARTER/2)*(start_x-1), SV.QUARTER/2*(x-start_x)) --é–‹å§‹åœ°ç‚¹, é•·ã•
         noteGroup[y]:addNote(ithNote)
       end
     end
@@ -107,10 +107,10 @@ end
 
 
 function main()
-  --python‚ğos.execute‚É‚ÄÀs
-  --‰¹Šy‚ÌÄ¶¨ƒI[ƒfƒBƒIƒgƒ‰ƒbƒN‚Ì’Ç‰Á‚Å‚«‚È‚¢‚Ì‚ÅƒXƒ‹[
-  --python‚ÍsynthV‚ğ‘O–Ê‚Éo‚µAƒVƒ‡[ƒgƒJƒbƒgƒL[‚É‚ÄƒXƒNƒŠƒvƒg‚ğ˜A‘±Às
-  --Às‚³‚ê‚½ƒXƒNƒŠƒvƒg‚Í‰æ‘œ‚ğo‚·B
+  --pythonã‚’os.executeã«ã¦å®Ÿè¡Œ
+  --éŸ³æ¥½ã®å†ç”Ÿâ†’ã‚ªãƒ¼ãƒ‡ã‚£ã‚ªãƒˆãƒ©ãƒƒã‚¯ã®è¿½åŠ ã§ããªã„ã®ã§ã‚¹ãƒ«ãƒ¼
+  --pythonã¯synthVã‚’å‰é¢ã«å‡ºã—ã€ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆã‚­ãƒ¼ã«ã¦ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’é€£ç¶šå®Ÿè¡Œ
+  --å®Ÿè¡Œã•ã‚ŒãŸã‚¹ã‚¯ãƒªãƒ—ãƒˆã¯ç”»åƒã‚’å‡ºã™ã€‚
   --SV:showMessageBox("title", "message")
   
   readFile()
