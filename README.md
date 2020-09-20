@@ -1,7 +1,7 @@
 # AutoMovieScript-SynthesizerV
 
 SynthesizerVにて動画を再生します
-こんな感じに→
+こんな感じに→https://www.nicovideo.jp/watch/sm37537602
 
 実際はかなりコマが遅い＆音はでないです
 
